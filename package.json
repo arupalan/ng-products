@@ -1,11 +1,12 @@
 {
-  "name": "ng-products",
+  "name": "ng-x-rocket",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "ng": "ng",
     "build": "npm run env -s && ng build --prod",
-    "start": "npm run env -s && ng serve --aot --proxy-config proxy.conf.js",
+    "startn": "concurrently \"npm run env -s && ng serve --aot --proxy-config proxy.conf.js \" \"dotnet run --project server/TestApi.csproj\" ",
+    "startx": "concurrently \"ngx \" \"dotnet run --project server/TestApi.csproj\" ",
     "serve:sw": "npm run build -s && npx http-server ./dist -p 4200",
     "lint": "ng lint && stylelint \"src/**/*.scss\" --syntax scss && htmlhint \"src\" --config .htmlhintrc",
     "test": "npm run env -s && ng test",
@@ -18,17 +19,16 @@
     "prettier:check": "prettier --list-different \"./{src,e2e}/**/*.{ts,js,scss}\"",
     "postinstall": "npm run prettier -s",
     "precommit": "pretty-quick --staged",
-    "generate": "ng generate"
+    "generate": "ng generate",
+    "start": "concurrently \"ng serve --extra-webpack-config webpack.partial.js -o --proxy-config proxy.conf.js \" \"dotnet run --project server/TestApi.csproj\" "
   },
   "dependencies": {
-    "@angular/animations": "^7.2.9",
-    "@angular/cdk": "^7.3.4",
+    "@angular/animations": "^7.0.0",
     "@angular/common": "^7.0.0",
     "@angular/compiler": "^7.0.0",
     "@angular/core": "^7.0.0",
     "@angular/forms": "^7.0.0",
     "@angular/http": "^7.0.0",
-    "@angular/material": "^7.3.4",
     "@angular/platform-browser": "^7.0.0",
     "@angular/platform-browser-dynamic": "^7.0.0",
     "@angular/router": "^7.0.0",
@@ -39,6 +39,7 @@
     "bootstrap": "^4.1.1",
     "core-js": "^2.5.6",
     "lodash": "^4.17.10",
+    "ngx-build-plus": "^7.7.6",
     "rxjs": "^6.3.1",
     "zone.js": "^0.8.26"
   },
@@ -54,6 +55,7 @@
     "@types/lodash": "^4.14.108",
     "@types/node": "^8.10.13",
     "codelyzer": "^4.4.4",
+    "concurrently": "^4.1.0",
     "hads": "^1.7.0",
     "htmlhint": "^0.10.0",
     "https-proxy-agent": "^2.0.0",

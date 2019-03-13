@@ -7,7 +7,6 @@ import { SharedModule } from '@app/shared';
 import { ProductRoutingModule } from './product-routing.module';
 import { ProductComponent } from './product.component';
 import { ProductService } from './product.service';
-import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
   imports: [
@@ -15,8 +14,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
     TranslateModule,
     CoreModule,
     SharedModule,
-    ProductRoutingModule,
-    MatGridListModule
+    ProductRoutingModule
   ],
   declarations: [ProductComponent],
   providers: [ProductService]
