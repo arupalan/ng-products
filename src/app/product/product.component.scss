@@ -1,0 +1,123 @@
+.logo {
+  width: 100px;
+}
+
+q {
+  font-style: italic;
+  font-size: 1.2rem;
+  quotes: "« " " »";
+}
+
+.product-filter {
+  display: flex;
+  padding: 30px 0;
+
+  h1 {
+    font-size: 28px;
+    font-weight: 300;
+    flex: 1;
+  }
+
+  & .sort {
+    display: flex;
+    align-self: flex-end;
+
+    & .collection-sort {
+      display: flex;
+      flex-direction: column;
+
+      &:first-child {
+        padding-right: 20px;
+      }
+
+      label {
+        color: #666;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 2em;
+        text-transform: uppercase;
+      }
+
+      select:not(:-internal-list-box) {
+        overflow: visible !important;
+      }
+
+      select,
+      input[type="color"i][list] {
+        background-color: rgb(248, 248, 248);
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(166, 166, 166);
+        border-image: initial;
+      }
+
+      select {
+        -webkit-appearance: menulist;
+        box-sizing: border-box;
+        align-items: center;
+        white-space: pre;
+        -webkit-rtl-ordering: logical;
+        color: black;
+        background-color: white;
+        cursor: default;
+        border-width: 1px;
+        border-style: solid;
+        border-color: initial;
+        border-image: initial;
+      }
+
+      select {
+        border-radius: 5px;
+
+        & option {
+          font-weight: normal;
+          display: block;
+          white-space: pre;
+          min-height: 1.2em;
+          padding: 0px 2px 1px;
+        }
+      }
+    }
+  }
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  background-color: #e9ecef;
+  border-radius: 0.3rem;
+
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    flex: 1 16%;
+    background-color: #fff;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.25);
+    max-width: 50%;
+    margin: 2%;
+
+    & .product-image img {
+      width: 100%;
+    }
+
+    .product-info {
+      margin-top: auto;
+      padding-top: 20px;
+      text-align: center;
+
+      & h5 {
+        font-weight: 500;
+        line-height: 1.7em;
+      }
+
+      h6 {
+        color: #666;
+        font-size: 14px;
+      }
+    }
+  }
+}
