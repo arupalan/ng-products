@@ -7,4 +7,4 @@
 
 backend should be running at port 5000 as per current configuration. Or alternately modify proxy.conf.js
 
- [[https://github.com/arupalan/repository/blob/master/static/Screenshot.png|alt=octocat]]
+ [[https://github.com/arupalan/ng-products/blob/master/static/Screenshot.png|alt=octocat]]
