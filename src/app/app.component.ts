@@ -10,15 +10,12 @@ import { Logger, I18nService } from '@app/core';
 
 const log = new Logger('App');
 
-declare const VERSION: string;
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'Version: ' + VERSION;
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,

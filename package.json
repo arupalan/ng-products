@@ -1,5 +1,5 @@
 {
-  "name": "ng-x-rocket",
+  "name": "ng-products",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -9,8 +9,9 @@
     "startx": "concurrently \"ngx \" \"dotnet run --project server/TestApi.csproj\" ",
     "serve:sw": "npm run build -s && npx http-server ./dist -p 4200",
     "lint": "ng lint && stylelint \"src/**/*.scss\" --syntax scss && htmlhint \"src\" --config .htmlhintrc",
-    "test": "npm run env -s && ng test",
+    "test:cli": "npm run env -s && ng test",
     "test:ci": "npm run env -s && npm run lint -s && ng test --code-coverage --watch=false",
+    "test": "ng test --code-coverage=true --watch=false && opn reports/coverage/index.html",
     "e2e": "npm run env -s && ng e2e",
     "translations:extract": "ngx-translate-extract --input ./src --output ./src/translations/template.json --format=json --clean -sort --marker extract",
     "docs": "hads ./docs -o",
@@ -68,6 +69,7 @@
     "karma-coverage-istanbul-reporter": "^2.0.2",
     "karma-jasmine": "^1.1.2",
     "karma-junit-reporter": "^1.2.0",
+    "opn-cli": "^4.0.0",
     "prettier": "^1.14.0",
     "pretty-quick": "^1.6.0",
     "protractor": "~5.4.0",
