@@ -12542,15 +12542,21 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/arup/projects/angular/backup/ng-products/client/server/TestApi.csproj",
+      "projectUniqueName": "/Users/arup/projects/angular/client1/server/TestApi.csproj",
       "projectName": "TestApi",
-      "projectPath": "/Users/arup/projects/angular/backup/ng-products/client/server/TestApi.csproj",
+      "projectPath": "/Users/arup/projects/angular/client1/server/TestApi.csproj",
       "packagesPath": "/Users/arup/.nuget/packages/",
-      "outputPath": "/Users/arup/projects/angular/backup/ng-products/client/server/obj/",
+      "outputPath": "/Users/arup/projects/angular/client1/server/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": ["/usr/local/share/dotnet/sdk/NuGetFallbackFolder"],
-      "configFilePaths": ["/Users/arup/.nuget/NuGet/NuGet.Config"],
-      "originalTargetFrameworks": ["netcoreapp2.1"],
+      "fallbackFolders": [
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "/Users/arup/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp2.1"
+      ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -12560,7 +12566,9 @@
         }
       },
       "warningProperties": {
-        "warnAsError": ["NU1605"]
+        "warnAsError": [
+          "NU1605"
+        ]
       }
     },
     "frameworks": {
@@ -12588,7 +12596,9 @@
             "version": "[2.1.1, )"
           }
         },
-        "imports": ["net461"],
+        "imports": [
+          "net461"
+        ],
         "assetTargetFallback": true,
         "warn": true
       }

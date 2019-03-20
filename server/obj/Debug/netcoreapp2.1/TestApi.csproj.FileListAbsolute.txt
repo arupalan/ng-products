@@ -68,3 +68,17 @@ D:/Vijay/Workout/Test/TestApi/TestApi/obj/Debug/netcoreapp2.1/TestApi.pdb
 /Users/arup/projects/angular/backup/ng-products/client/server/obj/Debug/netcoreapp2.1/TestApi.RazorTargetAssemblyInfo.cache
 /Users/arup/projects/angular/backup/ng-products/client/server/obj/Debug/netcoreapp2.1/TestApi.dll
 /Users/arup/projects/angular/backup/ng-products/client/server/obj/Debug/netcoreapp2.1/TestApi.pdb
+/Users/arup/projects/angular/client1/server/bin/Debug/netcoreapp2.1/TestApi.deps.json
+/Users/arup/projects/angular/client1/server/bin/Debug/netcoreapp2.1/TestApi.runtimeconfig.json
+/Users/arup/projects/angular/client1/server/bin/Debug/netcoreapp2.1/TestApi.runtimeconfig.dev.json
+/Users/arup/projects/angular/client1/server/bin/Debug/netcoreapp2.1/TestApi.dll
+/Users/arup/projects/angular/client1/server/bin/Debug/netcoreapp2.1/TestApi.pdb
+/Users/arup/projects/angular/client1/server/obj/Debug/netcoreapp2.1/TestApi.csprojAssemblyReference.cache
+/Users/arup/projects/angular/client1/server/obj/Debug/netcoreapp2.1/TestApi.csproj.CoreCompileInputs.cache
+/Users/arup/projects/angular/client1/server/obj/Debug/netcoreapp2.1/TestApi.RazorAssemblyInfo.cache
+/Users/arup/projects/angular/client1/server/obj/Debug/netcoreapp2.1/TestApi.RazorAssemblyInfo.cs
+/Users/arup/projects/angular/client1/server/obj/Debug/netcoreapp2.1/TestApi.AssemblyInfoInputs.cache
+/Users/arup/projects/angular/client1/server/obj/Debug/netcoreapp2.1/TestApi.AssemblyInfo.cs
+/Users/arup/projects/angular/client1/server/obj/Debug/netcoreapp2.1/TestApi.RazorTargetAssemblyInfo.cache
+/Users/arup/projects/angular/client1/server/obj/Debug/netcoreapp2.1/TestApi.dll
+/Users/arup/projects/angular/client1/server/obj/Debug/netcoreapp2.1/TestApi.pdb
