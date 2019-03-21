@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using TestApi.Dto;
 using TestApi.Helper;
+using System.Linq;
 
 namespace TestApi.Controllers
 {
@@ -12,7 +13,8 @@ namespace TestApi.Controllers
         [Route("~/v1/products")]
         public ActionResult<IList<Product>> GetProducts()
         {
-            return DataStore.GetProducts();
+            return DataStore.GetProducts().OrderByDescending( p => p.Id).ToList();
+
         }
         
     }
